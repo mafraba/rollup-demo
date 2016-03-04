@@ -1,0 +1,30 @@
+name: "Updating Demo"
+maintainer: "Flexiant Ltd."
+email: "contact@flexiant.com"
+description: "Installs/Configures Update Demo via KDeploy"
+version: "0.0.1"
+source: "https://github.com/flexiant/update-demo"
+issues: "https://github.com/flexiant/update-demo/issues"
+
+svc:
+  demo: "demo-service.yaml"
+
+rc:
+  demo: "demo-controller.yaml"
+
+attributes:
+  svc:
+    demo:
+      balancer:
+        description: "Defines how we want to expose the Updating Demo Service"
+        default: LoadBalancer
+        required: true
+      port:
+        description: "Defines expose port for the Updating Demo Service"
+        default: 80
+        required: true
+  rc:
+    demo:
+      replicas:
+        default: 3
+        required: true
