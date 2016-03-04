@@ -7,10 +7,10 @@ source: "https://github.com/flexiant/update-demo"
 issues: "https://github.com/flexiant/update-demo/issues"
 
 svc:
-  demo: "demo-service.yaml"
+  demo: "demo-svc.yaml"
 
 rc:
-  demo: "demo-controller.yaml"
+  demo: "demo-rc.yaml"
 
 attributes:
   svc:
