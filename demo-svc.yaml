@@ -4,10 +4,7 @@ metadata:
   name: demo
   labels:
     name: demo
-    test: v2
 spec:
-  # if your cluster supports it, uncomment the following to automatically create
-  # an external load-balanced IP for the demo service.
   type: {{ svc.demo.balancer }}
   ports:
     # the port that this service should serve on
